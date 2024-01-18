@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(48, 60, 56);
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(60, 106, 91);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 23px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+      }
+      .firstsection div {
+        width: 30%;
+        margin: 30px;
+      }
+      .leftpart {
+        /* background-color: red; */
+        padding: 40px;
+        font-size: xx-large;
+      }
+      /* .rightpart {
+        background-color: red;
+      } */
+      .rightpart img {
+        border-radius: 8px;
+        width: 200px;
+        /* padding: 20px; */
+      }
+      .purple {
+        color: rgb(128, 130, 253);
+      }
+      .right li a {
+        text-decoration: none;
+        color: white;
+      }
+      .right li a:hover {
+        color: rgb(148, 148, 241);
+        font-size: 1.04rem;
+      }
+      .left a {
+        text-decoration: none;
+        color: white;
+      }
+      main hr {
+        border: 0px;
+        background: rgb(68, 132, 111);
+        height: 1px;
+        margin: 30px;
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+      }
+      footer {
+        background-color: rgb(41, 46, 45);
+        height: 200px;
+      }
+      .footer li a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p>x</p>
+      <nav>
+        <div class="left"><a href="">Durga's Portfolio</a></div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">My Resume</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="block.html">Blog</a></li>
+            <li><a href="contsct _info.html">contact info</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftpart">
+          Hi my name <span class="purple">Durgadatta</span>,
+          <span id="element"></span>
+        </div>
+        <div class="rightpart">
+          <img src="Durgadatta.img.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondsection">
+        <h1>Projects</h1>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer_first">Durga's Portfollio</div>
+      <div class="footer_second">
+        <center>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">My Resume</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="block.html">Blog</a></li>
+            <li><a href="contsct _info.html">contact info</a></li>
+          </ul>
+        </center>
+      </div>
+      <div class="footer_thard"></div>
+      <div class="footer_forth"></div>
+    </footer>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["and i am a devloper", "also i am Data Scientist."],
+        typeSpeed: 70,
+      });
+    </script>
+  </body>
+</html>

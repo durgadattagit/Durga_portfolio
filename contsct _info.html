@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: white;
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* background-color: rgb(60, 106, 91); */
+      }
+      nav img {
+        width: 1540px;
+        height: 160px;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 23px;
+      }
+      .left {
+        font-size: 1.5rem;
+        position: absolute;
+        padding-right: 50rem;
+      }
+      .right {
+        position: absolute;
+        padding-left: 40rem;
+      }
+      .right li a {
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: rgb(242, 237, 243);
+      }
+      .right li a:hover {
+        font-size: 1.1rem;
+        color: rgb(211, 202, 211);
+      }
+      main {
+        margin: 50px 200px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .linked_in img {
+        height: 80px;
+      }
+      .github img {
+        height: 150px;
+      }
+      .gmail img {
+        height: 100px;
+      }
+      main div a {
+        color: black;
+      }
+      .box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* justify-content: space-around; */
+        align-items: center;
+        padding: 30px;
+      }
+      .box a {
+        align-items: center;
+        padding: 50px;
+        margin: 50px;
+      }
+      .linked_in a {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="contact">
+          <img src="contactus.webp" alt="" />
+        </div>
+
+        <div class="left">Durga's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">My Resume</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="block.html">Blog</a></li>
+            <li><a href="contsct _info.html">contact info</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="sectionone">
+        <div class="box">
+          <div class="linked_in">
+            <a href="https://www.linkedin.com/in/durgadatta-mishra-36ab1b271"
+              ><img src="images (2).png" alt="" /><br />Profile</a
+            >
+          </div>
+          <div class="github">
+            <a href="https://github.com/durgadattagit/"
+              ><img src="GitHub-Logo.png" alt="" /><br />Profile</a
+            >
+          </div>
+          <div class="gmail">
+            <a href=""><img src="images (3).jpeg" alt="" /><br />Profile</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
